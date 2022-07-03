@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>The impostor is sus</h1>
+    <h1>That was immature</h1>
   </div>
 </template>
