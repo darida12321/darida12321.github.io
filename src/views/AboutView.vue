@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>That was immature</h1>
+    <h1>Some substantial change</h1>
   </div>
 </template>
