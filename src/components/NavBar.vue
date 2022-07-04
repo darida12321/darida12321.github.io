@@ -1,7 +1,7 @@
 <template>
-  <router-link to="/about">about</router-link>
-  <div></div>
-  <router-link to="/project">project</router-link>
+  <router-link to="/">home </router-link>
+  <router-link to="/about">about </router-link>
+  <router-link to="/project">project </router-link>
 </template>
 
 <style scoped>
