@@ -1,0 +1,15 @@
+:root {
+    --base-color-dark: #062123;
+    --base-color: #093134;
+    --base-color-light: #0F5257;
+    --primary-color: #C14B0B;
+    --secondary-color: #83AD1F;
+    --text-color: #EFE7DA;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--base-color-dark);
+    color: var(--text-color);
+}
