@@ -1,19 +1,32 @@
 <template>
-  <router-link to="/">home </router-link>
-  <router-link to="/about">about </router-link>
-  <router-link to="/project">project </router-link>
+  <div id="links">
+    <router-link to="/">home</router-link>
+    <router-link to="/about">about</router-link>
+    <router-link to="/project">project</router-link>
+    <router-link to="/cv">cv</router-link>
+    <router-link to="/contact">contact</router-link>
+  </div>
+  <hr/>
 </template>
 
 <style scoped>
-div {
-  width: 100px;
-}
-nav {
-  padding: 30px;
+#links {
+  width: 40rem;
+  height: 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a {
+  width: 7rem;
+  height: 2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
 }
+
 </style>
