@@ -2,22 +2,33 @@
 <script setup>
 import GithubIcon from '../assets/github-icon.svg'
 import RightIcon from '../assets/right-icon.svg'
+
+import { defineProps } from 'vue'
+const props = defineProps({
+  width: String,
+  height: String,
+  data: {
+    title: String,
+    desc: String,
+    tech: [String]
+  }
+  // eslint-disable-next-line
+});
+
 </script>
 
 <template>
     <div id="project-box-outer">
         <div id="project-box">
-            <h2>PintOS</h2>
+            <h2>{{props.data.title}}</h2>
             <div id="seperation"></div>
             <div id="content">
                 <div id="picture"></div>
-                <p>Pintos is an operating system written in C.
-                    Its main features are concurrency with
-                    priority donation, a file system and
-                    virtual memory.</p>
+                <p>{{props.data.desc}}</p>
                 <div id="tools">
-                    <p>C</p>
-                    <p>GDB</p>
+                    <p v-for="(t, i) in props.data.tech" :key="i">
+                        {{t}}
+                    </p>
                 </div>
                 <div id="buttons">
                     <div id="github-button" class="button">
@@ -38,8 +49,8 @@ import RightIcon from '../assets/right-icon.svg'
 #project-box-outer {
     --border-size: 0.2rem;
     --inner-margin: 0.9rem;
-    --width: 20rem;
-    --height: 25rem
+    --width: v-bind('props.width');
+    --height: v-bind('props.height');
 }
 #project-box-outer {
     width: var(--width);
