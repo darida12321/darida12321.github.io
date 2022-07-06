@@ -1,13 +1,17 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue'
 import ProjectBox from '@/components/ProjectBox.vue'
-import { projects } from '../assets/projects.json'
+import projectsData from '../assets/projects.json'
+
+// eslint-disable-next-line
+var projects = projectsData.projects;
 
 </script>
 
 <template>
     <NavBar />
-    <h1>projects will go here</h1>
+    <h1>Some projects I worked on</h1>
+    <hr id="underline"/>
     <div id="projects">
         <div id="top">
             <ProjectBox width="23rem" height="31rem" :data="projects[0]"/>
@@ -26,6 +30,25 @@ import { projects } from '../assets/projects.json'
 </template>
 
 <style scoped>
+h1 {
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+#underline {
+    margin: 0.5rem auto 2rem auto;
+    width: 41rem;
+    background: var(--text-color);
+    border: 0.15rem solid var(--text-color);
+    border-radius: 0.15rem;
+}
+
+#projects {
+    margin-bottom: 3rem;
+}
+
 #top {
     width: 50rem;
     margin: auto;

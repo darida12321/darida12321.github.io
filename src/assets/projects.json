@@ -2,28 +2,21 @@
     "projects": [
         {
             "title": "Shortcutter",
+            "image": "project-images/shortcutter.png",
             "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
-            "tech": ["HTML", "CSS"]
+            "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase"]
         },
         {
             "title": "PintOs",
+            "image": "project-images/pintos.png",
             "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
-            "tech": ["HTML", "CSS", "C"]
+            "tools": ["HTML", "CSS", "C"]
         },
         {
-            "title": "Shortcutter3",
+            "title": "PintOs",
+            "image": "project-images/pintos.png",
             "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
-            "tech": ["HTML", "CSS"]
-        },
-        {
-            "title": "Shortcutter4",
-            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
-            "tech": ["HTML", "CSS"]
-        },
-        {
-            "title": "Shortcutter5",
-            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
-            "tech": ["HTML", "CSS"]
+            "tools": ["HTML", "CSS", "C"]
         }
     ]
 }

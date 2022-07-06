@@ -10,7 +10,7 @@ const props = defineProps({
   data: {
     title: String,
     desc: String,
-    tech: [String]
+    tools: [String]
   }
   // eslint-disable-next-line
 });
@@ -20,19 +20,22 @@ const props = defineProps({
 <template>
     <div id="project-box-outer">
         <div id="project-box">
-            <h2>{{props.data.title}}</h2>
+            <h2 id="title">{{props.data.title}}</h2>
             <div id="seperation"></div>
             <div id="content">
-                <div id="picture"></div>
-                <p>{{props.data.desc}}</p>
+                <img
+                    id="picture"
+                    :src="props.data.image"
+                    alt=""
+                >
+                <p id="desc">{{props.data.desc}}</p>
                 <div id="tools">
-                    <p v-for="(t, i) in props.data.tech" :key="i">
+                    <p v-for="(t, i) in props.data.tools" :key="i">
                         {{t}}
                     </p>
                 </div>
                 <div id="buttons">
-                    <div id="github-button" class="button">
-                        <p>Github link</p>
+                    <div id="code-button" class="button">
                         <img :src="GithubIcon" alt="">
                     </div>
                     <div id="learn-button" class="button">
@@ -67,10 +70,12 @@ const props = defineProps({
     height: calc(100% - var(--border-size));
     background: var(--base-color);
     border-radius: 1rem;
+    box-sizing: border-box;
+    padding-top: 0.3rem;
 }
 
-h2 {
-    margin: 0;
+#title {
+    margin: 0 0 0.3rem 0;
     text-align: center;
     font-size: calc(var(--height) * 0.08);
     line-height: calc(var(--height) * 0.08);
@@ -93,31 +98,32 @@ h2 {
 #picture {
     margin: 0 auto;
     width: calc(95%);
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     background: black;
     border-radius: 1rem;
 }
 
-p {
+#desc {
     margin: 0;
-    font-size: calc(var(--height) * 0.05);
-    line-height: calc(var(--height) * 0.05);
+    font-size: calc(var(--height) * 0.04);
+    line-height: calc(var(--height) * 0.04);
 }
 
 #tools {
     margin: 0;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: calc(var(--height) * 0.02);
 }
 
 #tools > p {
     margin: 0;
-    padding: 0.2rem 0.4rem;
+    padding: calc(var(--height) * 0.006) calc(var(--height) * 0.01);
     background: var(--secondary-color);
-    border-radius: 0.4rem;
+    border-radius: calc(var(--height) * 0.015);
     cursor: default;
-    font-size: calc(var(--height) * 0.05);
-    line-height: calc(var(--height) * 0.05);
+    font-size: calc(var(--height) * 0.035);
+    line-height: calc(var(--height) * 0.035);
 }
 
 #buttons {
@@ -125,38 +131,42 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: calc(var(--width)*0.06);
 }
 
 .button {
-    height: 2rem;
+    height: calc(var(--height)*0.1);
     background: var(--primary-color);
     border-radius: 0.5rem;
     box-sizing: border-box;
-    padding: 0 0.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-.button > p {
-    margin: 0;
-    font-size: calc(var(--height) * 0.045);
-    line-height: calc(var(--height) * 0.045);
-}
-.button > img {
-    height: 80%;
-}
-
 .button:hover {
-    background: red;
+    background: var(--primary-color-dark);
 }
 
-#github-button {
-    width: 50%;
+#code-button {
+    padding: 0 calc(var(--height)*0.01);
+    aspect-ratio: 1 / 1;
+}
+#code-button > img {
+    width: 100%;
 }
 
 #learn-button {
-    width: 45%;
+    padding: 0 calc(var(--height)*0.02);
+    width: 100%;
+}
+#learn-button > p {
+    margin: 0;
+    font-size: calc(var(--height) * 0.07);
+    line-height: calc(var(--height) * 0.07);
+}
+#learn-button > img {
+    height: 80%;
 }
 
 </style>

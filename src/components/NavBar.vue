@@ -2,7 +2,7 @@
   <div id="navbar">
     <div id="links">
       <router-link to="/">Home</router-link>
-      <router-link to="/about">About me</router-link>
+      <router-link to="/about">About</router-link>
       <router-link to="/project">Projects</router-link>
       <router-link to="/cv">CV</router-link>
       <router-link to="/contact">Contact</router-link>

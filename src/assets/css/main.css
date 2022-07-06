@@ -3,13 +3,26 @@
     --base-color: #093134;
     --base-color-light: #0F5257;
     --primary-color: #C14B0B;
-    --secondary-color: #83AD1F;
+    --primary-color-dark: #AE430A;
+    --secondary-color: #769C1C;
     --text-color: #EFE7DA;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
 
 html, body {
     margin: 0;
     padding: 0;
     background: var(--base-color-dark);
     color: var(--text-color);
+    font-family: 'Mingzat', sans-serif;
+}
+
+/* Disable scrollbar */
+:root {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+:root::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
