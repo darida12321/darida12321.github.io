@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title": "Shortcutter",
+            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
+            "tech": ["HTML", "CSS"]
+        },
+        {
+            "title": "PintOs",
+            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
+            "tech": ["HTML", "CSS", "C"]
+        },
+        {
+            "title": "Shortcutter3",
+            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
+            "tech": ["HTML", "CSS"]
+        },
+        {
+            "title": "Shortcutter4",
+            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
+            "tech": ["HTML", "CSS"]
+        },
+        {
+            "title": "Shortcutter5",
+            "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
+            "tech": ["HTML", "CSS"]
+        }
+    ]
+}

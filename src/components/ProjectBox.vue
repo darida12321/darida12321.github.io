@@ -100,7 +100,8 @@ h2 {
 
 p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: calc(var(--height) * 0.05);
+    line-height: calc(var(--height) * 0.05);
 }
 
 #tools {
@@ -115,6 +116,8 @@ p {
     background: var(--secondary-color);
     border-radius: 0.4rem;
     cursor: default;
+    font-size: calc(var(--height) * 0.05);
+    line-height: calc(var(--height) * 0.05);
 }
 
 #buttons {
@@ -137,6 +140,8 @@ p {
 }
 .button > p {
     margin: 0;
+    font-size: calc(var(--height) * 0.045);
+    line-height: calc(var(--height) * 0.045);
 }
 .button > img {
     height: 80%;
