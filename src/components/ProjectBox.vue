@@ -1,6 +1,7 @@
 
 <script setup>
 import GithubIcon from '../assets/github-icon.svg'
+import ItchioIcon from '../assets/itch-io-icon.svg'
 import RightIcon from '../assets/right-icon.svg'
 
 import { defineProps } from 'vue'
@@ -36,7 +37,8 @@ const props = defineProps({
                 </div>
                 <div id="buttons">
                     <div id="code-button" class="button">
-                        <img :src="GithubIcon" alt="">
+                        <img v-if="props.data.srcIcon === 'github'" :src="GithubIcon" alt="">
+                        <img v-else :src="ItchioIcon" alt="">
                     </div>
                     <div id="learn-button" class="button">
                         <p>Learn more</p>
