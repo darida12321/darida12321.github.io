@@ -1,8 +1,8 @@
 
 <script setup>
-import GithubIcon from '../assets/github-icon.svg'
-import ItchioIcon from '../assets/itch-io-icon.svg'
-import RightIcon from '../assets/right-icon.svg'
+import GithubIcon from '../assets/icons/github.svg'
+import ItchioIcon from '../assets/icons/itch-io.svg'
+import RightIcon from '../assets/icons/right.svg'
 
 import { defineProps } from 'vue'
 const props = defineProps({
