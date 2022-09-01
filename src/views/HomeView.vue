@@ -20,7 +20,7 @@ import EmailIcon from '../assets/icons/email.svg'
     <a href="https://www.facebook.com/profile.php?id=100008449800227" target="_blank">
       <img :src="FacebookIcon" alt="" class="icon">
     </a>
-    <a href="https://mail.google.com/mail/u/0/?source=mailto&to=%5Bdani.mihalik@gmail.com%5D" target="_blank">
+    <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=[dani.mihalik@gmail.com]" target="_blank">
       <img :src="EmailIcon" alt="" class="icon">
     </a>
 
