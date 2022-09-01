@@ -13,8 +13,7 @@ const props = defineProps({
     desc: String,
     tools: [String]
   }
-  // eslint-disable-next-line
-});
+})
 
 </script>
 
