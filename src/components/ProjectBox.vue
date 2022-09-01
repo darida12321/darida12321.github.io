@@ -37,13 +37,13 @@ const props = defineProps({
                     </p>
                 </div>
                 <div id="buttons">
-                    <a v-if="props.data.srcIcon !== 'none'" :href="props.data.codeLink">
+                    <a v-if="props.data.srcIcon !== 'none'" :href="props.data.codeLink" target="_blank">
                         <div id="code-button" class="button">
                             <img v-if="props.data.srcIcon === 'github'" :src="GithubIcon" alt="">
                             <img v-else :src="ItchioIcon" alt="">
                         </div>
                     </a>
-                    <a :href="props.data.learnLink">
+                    <a :href="props.data.learnLink" target="_blank">
                         <div id="learn-button" class="button">
                             <p>Learn more</p>
                             <img :src="RightIcon" alt="">

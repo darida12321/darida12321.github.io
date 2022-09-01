@@ -2,7 +2,7 @@
 import NavBar from '@/components/NavBar.vue'
 import GithubIcon from '../assets/icons/github.svg'
 import FacebookIcon from '../assets/icons/facebook.svg'
-import MessengerIcon from '../assets/icons/messenger.svg'
+import EmailIcon from '../assets/icons/email.svg'
 </script>
 
 <template>
@@ -13,13 +13,17 @@ import MessengerIcon from '../assets/icons/messenger.svg'
     I am a student at <span>Imperial</span> doing
     <span>programming</span> and <span>web development</span>
   </h2>
-  <div id="contact-me">
-    Contact me
-  </div>
   <div id="socials">
-    <img :src="GithubIcon" alt="" class="icon">
-    <img :src="FacebookIcon" alt="" class="icon">
-    <img :src="MessengerIcon" alt="" class="icon">
+    <a href="https://github.com/darida12321" target="_blank">
+      <img :src="GithubIcon" alt="" class="icon">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100008449800227" target="_blank">
+      <img :src="FacebookIcon" alt="" class="icon">
+    </a>
+    <a href="https://mail.google.com/mail/u/0/?source=mailto&to=%5Bdani.mihalik@gmail.com%5D" target="_blank">
+      <img :src="EmailIcon" alt="" class="icon">
+    </a>
+
   </div>
 </template>
 
