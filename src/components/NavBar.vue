@@ -4,8 +4,6 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/project">Projects</router-link>
-      <router-link to="/cv">CV</router-link>
-      <router-link to="/contact">Contact</router-link>
     </div>
     <hr id="dividor"/>
   </div>
@@ -17,7 +15,8 @@
   height: 3rem;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
   align-items: flex-end;
 }
 
