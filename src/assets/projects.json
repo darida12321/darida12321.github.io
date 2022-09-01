@@ -16,21 +16,21 @@
         },
         {
             "title": "WACC",
-            "image": "project-images/pintos.png",
+            "image": "project-images/wacc.png",
             "desc": "WACC is a programming language created for a university project",
             "tools": ["Scala", "Parsers", "Unit testing"],
             "srcIcon": "github"
         },
         {
             "title": "Website",
-            "image": "project-images/pintos.png",
+            "image": "project-images/website.png",
             "desc": "This website was designed and created by me.",
             "tools": ["Figma", "Vue.js", "npm"],
             "srcIcon": "itch"
         },
         {
             "title": "UNIT",
-            "image": "project-images/pintos.png",
+            "image": "project-images/unit.png",
             "desc": "UNIT is a game made in 2 days for a game jam.",
             "tools": ["Game maker", "Graphics"],
             "srcIcon": "itch"
