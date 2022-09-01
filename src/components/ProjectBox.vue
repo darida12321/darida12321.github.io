@@ -11,7 +11,9 @@ const props = defineProps({
   data: {
     title: String,
     desc: String,
-    tools: [String]
+    tools: [String],
+    codeLink: String,
+    learnLink: String
   }
 })
 
@@ -35,14 +37,18 @@ const props = defineProps({
                     </p>
                 </div>
                 <div id="buttons">
-                    <div id="code-button" class="button">
-                        <img v-if="props.data.srcIcon === 'github'" :src="GithubIcon" alt="">
-                        <img v-else :src="ItchioIcon" alt="">
-                    </div>
-                    <div id="learn-button" class="button">
-                        <p>Learn more</p>
-                        <img :src="RightIcon" alt="">
-                    </div>
+                    <a v-if="props.data.srcIcon !== 'none'" :href="props.data.codeLink">
+                        <div id="code-button" class="button">
+                            <img v-if="props.data.srcIcon === 'github'" :src="GithubIcon" alt="">
+                            <img v-else :src="ItchioIcon" alt="">
+                        </div>
+                    </a>
+                    <a :href="props.data.learnLink">
+                        <div id="learn-button" class="button">
+                            <p>Learn more</p>
+                            <img :src="RightIcon" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -157,14 +163,21 @@ const props = defineProps({
     width: 100%;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 #learn-button {
     padding: 0 calc(var(--height)*0.02);
     width: 100%;
+    text-decoration: none;
 }
 #learn-button > p {
     margin: 0;
     font-size: calc(var(--height) * 0.07);
     line-height: calc(var(--height) * 0.07);
+    color: var(--text-color);
 }
 #learn-button > img {
     height: 80%;

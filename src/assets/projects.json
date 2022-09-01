@@ -5,35 +5,45 @@
             "image": "project-images/shortcutter.png",
             "desc": "Shortcutter is a website designed to teach people how to use shortcuts.",
             "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase"],
-            "srcIcon": "github"
+            "srcIcon": "github",
+            "codeLink": "https://github.com/darida12321/drp",
+            "learnLink": "https://drp-project-2fb9b.web.app/"
         },
         {
             "title": "PintOs",
             "image": "project-images/pintos.png",
             "desc": "PintOs is an operating system, written in C. It was created for a university project.",
             "tools": ["C", "Unit testing", "Virtual memory"],
-            "srcIcon": "github"
+            "srcIcon": "none",
+            "codeLink": "",
+            "learnLink": "https://en.wikipedia.org/wiki/Pintos"
         },
         {
             "title": "WACC",
             "image": "project-images/wacc.png",
             "desc": "WACC is a programming language created for a university project",
             "tools": ["Scala", "Parsers", "Unit testing"],
-            "srcIcon": "github"
+            "srcIcon": "none",
+            "codeLink": "",
+            "learnLink": "https://gitlab.doc.ic.ac.uk/rd3918/wacc_examples/-/blob/707e234e4c7659d3efac2ab7c4b1c78bde568d74/The%20WACC%20Language%20Specification/WACCLangSpec.pdf"
         },
         {
             "title": "Website",
             "image": "project-images/website.png",
             "desc": "This website was designed and created by me.",
             "tools": ["Figma", "Vue.js", "npm"],
-            "srcIcon": "itch"
+            "srcIcon": "github",
+            "codeLink": "https://github.com/darida12321/darida12321.github.io",
+            "learnLink": "https://darida12321.github.io/"
         },
         {
             "title": "UNIT",
             "image": "project-images/unit.png",
             "desc": "UNIT is a game made in 2 days for a game jam.",
             "tools": ["Game maker", "Graphics"],
-            "srcIcon": "itch"
+            "srcIcon": "none",
+            "codeLink": "",
+            "learnLink": "https://darida12321.itch.io/unit"
         }
     ]
 }
