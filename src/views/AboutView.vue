@@ -2,25 +2,24 @@
 import NavBar from '@/components/NavBar.vue'
 import UserIcon from '../assets/icons/user.svg'
 const skills = [
-  { name: 'C++', percent: 94 },
-  { name: 'Python', percent: 77 },
-  { name: 'Haskell', percent: 10 },
-  { name: 'Rust', percent: 50 }
-// eslint-disable-next-line
-];
+  { name: 'C++', percent: 90 },
+  { name: 'C', percent: 80 },
+  { name: 'Java', percent: 80 },
+  { name: 'Rust', percent: 75 }
+]
 const tools = [
-  { name: 'Haskell', val: 3 },
-  { name: 'C', val: 2 },
-  { name: 'C++', val: 2 },
-  { name: 'NodeJS', val: 1 },
-  { name: 'Python', val: 1 },
-  { name: 'HTML', val: 1 },
-  { name: 'CSS', val: 1 },
-  { name: 'React', val: 0 },
-  { name: 'Vue', val: 0 },
-  { name: 'Rust', val: 0 }
-// eslint-disable-next-line
-];
+  { name: 'JS', val: 3 },
+  { name: 'Python', val: 3 },
+  { name: 'Haskell', val: 2 },
+  { name: 'Scala', val: 2 },
+  { name: 'HTML', val: 2 },
+  { name: 'CSS', val: 2 },
+  { name: 'Vue', val: 1 },
+  { name: 'express', val: 1 },
+  { name: 'React', val: 1 },
+  { name: 'Kotlin', val: 0 },
+  { name: 'Firebase', val: 0 }
+]
 </script>
 
 <template>
@@ -35,7 +34,7 @@ const tools = [
       <p>I am a computer science student at Imperial
         College London.<br/>
         <br/>
-        My passion from programming started at a
+        My passion for programming started at a
         young age, and I have been doing game design,
         web development and general hobby programming
         ever since.</p>
